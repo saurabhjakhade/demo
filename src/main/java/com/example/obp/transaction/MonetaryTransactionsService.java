@@ -11,7 +11,8 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
 
 import com.example.obp.account.Account;
-import com.example.obp.account.Transaction;
+//import com.example.obp.account.Transaction;
+import com.example.model.transaction.*;
 
 import java.util.List;
 
@@ -30,6 +31,7 @@ public class MonetaryTransactionsService {
         return transactions.getTransactions();
     }
 
+
     public Transaction getTransactionById(String token, Account account, String txId) {
         String txUrl = String.format("%s/banks/%s/accounts/%s/owner/transactions/%s/transaction", apiUrl, account.getBankId(), account.getId(), txId);
         HttpEntity<Void> req = prepareAuthRequest(token);
@@ -47,7 +49,7 @@ public class MonetaryTransactionsService {
 
     }
 
-    
+ /*   
     private static class Transactions {
         private List<Transaction> transactions;
 
@@ -59,5 +61,5 @@ public class MonetaryTransactionsService {
 			this.transactions = transactions;
 		}
         
-    }
+    } */
 }

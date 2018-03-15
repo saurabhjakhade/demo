@@ -2,10 +2,10 @@ package com.example.tesobe.obp.transaction;
 
 import com.example.obp.account.Account;
 import com.example.obp.account.AccountService;
-import com.example.obp.account.Transaction;
+//import com.example.obp.account.Transaction;
 import com.example.obp.transaction.MonetaryTransactionsService;
 import com.example.tesobe.obp.AbstractTestSupport;
-
+import com.example.model.transaction.*;
 
 import org.junit.Assert;
 import org.junit.Test;

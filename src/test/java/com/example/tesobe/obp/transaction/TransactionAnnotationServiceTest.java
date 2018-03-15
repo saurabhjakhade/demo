@@ -2,8 +2,8 @@ package com.example.tesobe.obp.transaction;
 
 import com.example.obp.account.Account;
 import com.example.obp.account.AccountService;
-import com.example.obp.account.Transaction;
-import com.example.obp.account.Transaction.Tag;
+//import com.example.obp.account.Transaction;
+//import com.example.obp.account.Transaction.Tag;
 import com.example.obp.transaction.MonetaryTransactionsService;
 import com.example.obp.transaction.TransactionAnnotationService;
 import com.example.tesobe.obp.AbstractTestSupport;
@@ -13,11 +13,11 @@ import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.List;
-
+import com.example.model.transaction.*;
 
 
 public class TransactionAnnotationServiceTest extends AbstractTestSupport {
-    @Autowired private AccountService accountService;
+/*    @Autowired private AccountService accountService;
     @Autowired private MonetaryTransactionsService monetaryTransactionsService;
     @Autowired private TransactionAnnotationService transactionAnnotationService;
 
@@ -53,5 +53,5 @@ public class TransactionAnnotationServiceTest extends AbstractTestSupport {
         txTags = monetaryTransactionsService.getTransactionById(authToken, ownAccount, tx.getId()).getMetadata().getTags();
         Assert.assertTrue(!txTags.contains(tag));
     }
-
+*/
 }
