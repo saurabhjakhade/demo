@@ -23,7 +23,7 @@ public class CustomerServiceTest extends AbstractTestSupport {
 	@Test
     public void testGetCustomers()
     {
-		List<Customer> customerList = customerService.getCustomers(authToken, "bnpp.12.fr.fr");
+		List<Customer> customerList = customerService.getCustomers(authToken, "obp-bankx-n");
 		System.out.println("Customer Size :" + customerList.size());
     }
 	
